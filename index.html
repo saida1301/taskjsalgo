@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+</body>
+
+
+<script>
+    //1ci
+function sum_sq(array) {
+var sum = 0, 
+    i = array.length;
+while (i--) 
+ sum += Math.pow(array[i], 2);
+return sum;
+}
+
+console.log(sum_sq([...Array(100).keys()] )); 
+
+
+
+
+//2ci
+const arr = [...Array(7).keys()];
+
+var sum = 0;
+
+for (var number of arr) {
+  sum += number;
+}
+
+average = sum / arr.length;
+
+console.log(average);
+
+//3cu
+function divided(n, m,x) {
+for (let i = n; i < m; i++) {
+if (i % x === 0) {
+ sum +=i;
+}
+  
+}
+return sum;
+}
+
+
+//4cu
+function divided(n, m,) {
+for (let i = n; i < m; i++) {
+for (let j = 2; j < i; j++) {
+if (j % i === 0) {
+sum += i;
+}
+
+}
+
+}
+return sum;
+}
+  </script>
+
+</html>
